@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ServerM">
+    <children>
+        <Label layoutX="40.0" layoutY="14.0" text="POP3">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+      <TableView fx:id="table" editable="true" layoutX="14.0" layoutY="83.0" prefHeight="403.0" prefWidth="674.0">
+        <columns>
+            <TableColumn fx:id="inputMessage" prefWidth="116.0" text="входящие " />
+          <TableColumn fx:id="emailMessage" prefWidth="152.0" text="Email" />
+            <TableColumn fx:id="nameEmail" prefWidth="193.0" text="Name" />
+            <TableColumn fx:id="sizeMessage" prefWidth="212.0" text="Size" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Smtp">
+    <children>
+        <Label layoutX="13.0" text="SMTP">
+            <font>
+                <Font name="System Bold" size="43.0" />
+            </font>
+        </Label>
+      <Label layoutX="40.0" layoutY="64.0" text="MAIL FROM:" />
+      <TextArea fx:id="textAreaOutputCommand" layoutX="14.0" layoutY="378.0" prefHeight="108.0" prefWidth="681.0" />
+      <TextField fx:id="mailFrom" layoutX="115.0" layoutY="60.0" prefHeight="25.0" prefWidth="181.0" />
+      <TextField fx:id="rcptTo" layoutX="115.0" layoutY="92.0" prefHeight="25.0" prefWidth="181.0" />
+      <TextField fx:id="zagolovName" layoutX="115.0" layoutY="166.0" prefHeight="25.0" prefWidth="134.0" />
+      <Label layoutX="40.0" layoutY="96.0" text="RCPT TO" />
+      <Label layoutX="47.0" layoutY="170.0" prefHeight="2.0" prefWidth="33.0" text="FROM" />
+      <Label layoutX="206.0" layoutY="124.0" prefHeight="25.0" prefWidth="47.0" text="•DATA" />
+      <Label layoutX="45.0" layoutY="210.0" text="Subject" />
+      <TextField fx:id="zagolovEmail" layoutX="316.0" layoutY="166.0" prefHeight="25.0" prefWidth="145.0" />
+      <Label layoutX="307.0" layoutY="170.0" text="&lt;" />
+      <Label layoutX="461.0" layoutY="170.0" text="&gt;" />
+      <Label layoutX="267.0" layoutY="170.0" text="email" />
+      <TextArea fx:id="textAreaMessage" layoutX="106.0" layoutY="204.0" prefHeight="127.0" prefWidth="355.0" />
+      <Button fx:id="quitSMTP" layoutX="104.0" layoutY="343.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="355.0" text="QUIT" />
+    </children>
+</AnchorPane>
